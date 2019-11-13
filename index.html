@@ -2,7 +2,9 @@
 <html leng="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>food-passion-restaurant</title>
+		<link type="image/ico" href="assets/icons/favicon.ico" rel="icon">
 		<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans|Playfair+Display" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -12,59 +14,59 @@
 
 	<body>
 		<header>
-			<div class="wrapper">
-				<img class="main fades animated" src="assets/icons/main-text.png">
 				<nav class="menu fadeRight animateTime">
 					<div class="icon">
 						<img class="logo" src="assets/icons/logo.png">
 						<ul class="navigator">
 							<li>
 								<i class="fas fa-angle-right"></i>
-								<a href="#home">home</a>
+								<a class="nav-link" href="#home">home</a>
 							</li>
 							<li>
 								<i class="fas fa-angle-right"></i>
-								<a href="#about">about</a>
+								<a class="nav-link" href="#about">about</a>
 							</li>
 							<li>
 								<i class="fas fa-angle-right"></i>
-								<a href="#gallery">gallery</a>
+								<a class="nav-link" href="#gallery">gallery</a>
 							</li>
 							<li>
 								<i class="fas fa-angle-right"></i>
-								<a href="#services">services</a>
+								<a class="nav-link" href="#services">services</a>
 							</li>
 							<li>
 								<i class="fas fa-angle-right"></i>
-								<a href="#menus">menus</a>
+								<a class="nav-link" href="#menus">menus</a>
 							</li>
 							<li>
 								<i class="fas fa-angle-right"></i>
-								<a href="contacts">contacts</a>
+								<a class="nav-link" href="#contacts">contacts</a>
 							</li>
 						</ul>
 					</div>
 
 					<div class="credit">
-						<i class="fab fa-twitter"></i>
+						<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
 						<p class="check"><a class="twitt">@louisdesign</a> check out</p>
 						<p class="name">marine theme</p>
-						<a href="http://themeforest.net/user/louisdesign/portfolio" class="e-address">http://themeforest.net/user<br>/louisdesign/portfolio</a>
+						<a href="http://themeforest.net/user/louisdesign/portfolio" class="e-address">http://<br>themeforest<br>.net /<br> user<br> /<br> louisdesign/<br> portfolio</a>
 						<p class="time">12 minutes ago</p>
 					</div>
 
 					<div class="social">
-						<i class="fab fa-facebook-f"></i>
-						<i class="fab fa-twitter"></i>
-						<i class="fab fa-skype"></i>
+						<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.skype.com/"><i class="fab fa-skype"></i></a>
 					</div>
 
 					<div class="copyRight">
-						<p>2014 the gourmet.</p>
+						<p>2019 the gourmet.</p>
 						<p>all rights reserved</p>
 					</div>
 				</nav>
-			</div>
+				<div class="head_picture">
+					<img class="head fades animated" src="assets/icons/main-text.png">
+			   </div>
 		</header>
 
 		<main>
@@ -85,417 +87,430 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad nisi excepturi mollitia laudantium ea consectetur consequuntur autem quo veritatis accusantium adipisci non delectus dolorem deserunt ut. Itaque, id, debitis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ad nisi excepturi mollitia laudantium ea</p>
 					</div>
 			    </div>
-			    <div class="image">
+			    <div class="chef-image">
                    <img src="assets/image-2.jpeg" alt="Chef Gustave Berneir">
                 </div>
 			</div>
 
 			<div id="gallery">
-				<div class="description">
-					<h2><span class="color">our</span> gallery</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>Corporis cumque iure vel doloribus, eius laudantium.</p>
-					<div id="buttonContainer">
-						<button class="btn active" onclick="filterSelection('all')">all</button>
-						<button class="btn" onclick="filterSelection('meat')">meat</button>
-						<button class="btn" onclick="filterSelection('fish')">fish</button>
-						<button class="btn" onclick="filterSelection('dessert')">dessert</button>
-						<button class="btn" onclick="filterSelection('vegetarian')">vegetarian</button>
+				    <div class="description">
+				    	<div class="wrapper">
+							<h2><span class="color">our</span> gallery</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>Corporis cumque iure vel doloribus, eius laudantium.</p>
+							<ul class="buttonContainer">
+								<li class="active" filterSelection="all"><button>all</button></li>
+								<li filterSelection="meat"><button>meat</button></li>
+								<li filterSelection="fish"><button>fish</button></li>
+								<li filterSelection="dessert"><button>dessert</button></li>
+								<li filterSelection="vegetarian"><button>vegetarian</button></li>
+							</ul>
+					    </div>
 					</div>
-				</div>
-
-				<div class="row">
-					<div class="column meat">
-					    <img src="assets/image-5.jpeg" alt="">
+                    <div class="container">
+						<div class="categories">
+							<div class="column" filterCategory="meat">
+							    <img src="assets/image-51.jpg" class="img" alt="">
+							</div>
+							<div class="column" filterCategory="meat">
+							    <img src="assets/image-81.jpg" class="img" alt="">
+							</div>
+							<div class="column" filterCategory="fish">
+							    <img src="assets/image-31.jpg" class="img" alt="">
+							</div>
+							<div class="column" filterCategory="fish">
+								<img src="assets/image-7.jpeg" class="img" alt="Fish, Salad and Fries">
+							</div>
+							<div class="column" filterCategory="vegetarian">
+							    <img src="assets/image-61.jpg" class="img" alt="">
+							</div>
+							<div class="column" filterCategory="fish">
+							    <img src="assets/image-101.jpg" class="img" alt="">
+							</div>
+							<div class="column" filterCategory="dessert">
+							    <img src="assets/image-4.jpeg" class="img" alt="Raspberry Sorbet Popsicle">
+							</div>
+							<div class="column" filterCategory="dessert">
+							    <img src="assets/image-9.jpeg" class="img" alt="">
+							</div>
+							<div class="column" filterCategory="dessert">
+							    <img src="assets/image-12.jpeg" class="img" alt="Pancakes with Fruits and Maple syrup">
+							</div>
+						</div>
 					</div>
-					<div class="column meat">
-					    <img src="assets/image-8.jpeg" alt="">
-					</div>
-					<div class="column fish">
-					    <img src="assets/image-3.jpeg" alt="">
-					</div>
-					<div class="column fish">
-						<img src="assets/image-7.jpeg" alt="Fish, Salad and Fries">
-					</div>
-					<div class="column fish">
-					    <img src="assets/image-10.jpeg" alt="">
-					</div>
-					<div class="column dessert">
-					    <img src="assets/image-4.jpeg" alt="Raspberry Sorbet Popsicle">
-					</div>
-					<div class="column dessert">
-					    <img src="assets/image-9.jpeg" alt="">
-					</div>
-					<div class="column dessert">
-					    <img src="assets/image-12.jpeg" alt="Pancakes with Fruits and Maple syrup">
-					</div>
-					<div class="column vegetarian">
-					    <img src="assets/image-6.jpeg" alt="">
-					</div>
-	                <div class="column vegetarian">
-						<img src="assets/image-11.jpeg" alt="Belgian Waffle and cooked vegetables">
-					</div>
-				</div>
 			</div>
 
-			<div id="services">
-				<div class="wrapper">
-				    <div class="headline">
-							<h2><span class="color">our</span> services</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> <p>Magni deserunt iste placeat suscipit itaque molestiae natus accusantium,</p>
-					</div>
-				    <div class="meals">
-				    	<ul>
-							<li class="breakfast fadeInUp animated-fast">
-								<img src="assets/icons/coffee.png">
-								<p>Lorem ipsum dolor sit amet</p> <p>adipisicing elit. Aut impedit</p> <p>Perferendis, neque.</p>
-							</li>
-							<li class="lunch fadeInUp animated-fast">
-								<img src="assets/Icons/chinesefood.png">
-								<p>Lorem ipsum dolor sit amet</p> <p>adipisicing elit. Aut impedit</p> <p>Perferendis, neque.</p>
-							</li>
-							<li class="dinner fadeInUp animated-fast">
-								<img src="assets/Icons/pasta.png">
-								<p>Lorem ipsum dolor sit amet</p> <p>adipisicing elit. Aut impedit</p> <p>Perferendis, neque.</p>
-							</li>
-							<li class="custom fadeInUp animated-fast">
-								<img src="assets/Icons/plate.png">
-								<p>Lorem ipsum dolor sit amet</p> <p>adipisicing elit. Aut impedit</p> <p>Perferendis, neque.</p>
-							</li>
-					    </ul>
-					</div>
-				</div>
+		    <div id="services">
+				<div class="headline">
+					<h2><span class="color">our</span> services</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> <p>Magni deserunt iste placeat suscipit itaque molestiae natus accusantium,</p>
+			    </div>
+				    <ul class="meals">
+						<li class="breakfast fadeInUp animated-fast">
+							<img src="assets/icons/coffee.png">
+							<p>Lorem ipsum dolor sit amet</p> <p>adipisicing elit. Aut impedit</p> <p>Perferendis, neque.</p>
+						</li>
+						<li class="lunch fadeInUp animated-fast">
+							<img src="assets/Icons/chinesefood.png">
+							<p>Lorem ipsum dolor sit amet</p> <p>adipisicing elit. Aut impedit</p> <p>Perferendis, neque.</p>
+						</li>
+						<li class="dinner fadeInUp animated-fast">
+							<img src="assets/Icons/pasta.png">
+							<p>Lorem ipsum dolor sit amet</p> <p>adipisicing elit. Aut impedit</p> <p>Perferendis, neque.</p>
+						</li>
+						<li class="custom fadeInUp animated-fast">
+							<img src="assets/Icons/plate.png">
+							<p>Lorem ipsum dolor sit amet</p> <p>adipisicing elit. Aut impedit</p> <p>Perferendis, neque.</p>
+						</li>
+				    </ul>		
 			</div>
-
-	        <div class="tab">
-		  		<button class="tablinks" onclick="openMenu(event, 'breakfast')">breakfast</button>
-		  		<button class="tablinks" onclick="openMenu(event, 'lunch')">lunch</button>
-		 		<button class="tablinks" onclick="openMenu(event, 'dinner')">dinner</button>
-			</div>
-
-			<div id="breakfast" class="tabcontent">
-				<h2><span class="color">our</span> breakfast</h2>
-				<ul class="firstC">
-					<li>
-						<h4>soft-boiled organic egg</h4>
-						<p class="listItem clearfix">
-							<span class="dish">with "soldiers"</span>
-							<span class="price">5.00</span>
-						</p>
-					</li>
-
-					<li>
-						<h4>eggs any style</h4>
-						<p class="listItem clearfix">
-							<span class="dish">with homefries & toast</span>
-							<span class="price">16.00</span>
-						</p>	
-					</li>
-
-					<li>
-						<h4>scrambled eggs in puff pastry</h4>
-						<p class="listItem clearfix">
-							<span class="dish">with wild mushrooms ans asparagus</span>
-							<span class="price">22.00</span>
-						</p>	
-					</li>
-
-					<li>
-						<h4>eggs benedict</h4>
-						<p class="listItem clearfix">
-							<span class="dish">with homefries</span>	
-							<span class="price">22.00</span>
-						</p>
-					</li>
-
-					<li>
-						<h4>eggs norwegain</h4>
-						<p class="listItem clearfix">
-							<span class="dish">poached eggs with smoked salmon and hollandaise</span>
-							<span class="price">23.00</span>	
-						</p>
-					</li>
+		
+           
+	        <div id="menus">
+		        <ul id="nav-tab">
+		        	  <li class="active"><a href="#breakfast">breakfast</a></li>
+	 				  <li><a href="#lunch">lunch</a></li>
+	 				  <li><a href="#dinner">dinner</a></li>
 				</ul>
 
-				<ul class="secondC">
-					<li>
-						<h4>soft-boiled organic egg</h4>
-						<p class="listItem clearfix">
-							<span class="dish">with "soldiers</span>	
-							<span class="price">5.00</span>
-						</p>
-					</li>
+				<div class="content"> 
+					<div class="tab-pane active" id="breakfast">
+					    <h2><span class="color">our</span> breakfast</h2>
+					    <div class="meal">
+						    <ul class="firstC">
+							    <li>
+								    <h4>soft-boiled organic egg</h4>
+								    <p class="listItem clearfix">
+								       <span class="dish">with "soldiers"</span>
+									   <span class="price">5.00</span>
+								    </p>
+							    </li>
 
-					<li>
-						<h4>eggs ny style</h4>
-						<p class="listItem clearfix">
-						    <span class="dish">with homefries & toast</span>
-							<span class="price">16.00</span>	
-					    </p>
-					</li>
+							    <li>
+							    	<h4>eggs any style</h4>
+								    <p class="listItem clearfix">
+									   <span class="dish">with homefries & toast</span>
+									   <span class="price">16.00</span>
+							     	</p>	
+							    </li>
 
-					<li>
-						<h4>scrambled eggs in puff pastry</h4>
-						<p class="listItem clearfix">
-							<span class="dish">with wild mushrooms and asparagus</span>
-							<span class="price">22.00</span>
-						</p>	
-					</li>
+							    <li> 
+							    	<h4>scrambled eggs in puff pastry</h4>
+							    	<p class="listItem clearfix">
+							    		<span class="dish">with wild mushrooms ans asparagus</span>
+								    	<span class="price">22.00</span>
+								    </p>	
+							    </li>
 
-					<li>
-						<h4>eggs benedict</h4>
-						<p class="listItem clearfix">
-							<span class="dish">with homefries</span>
-							<span class="price">22.00</span>
-						</p>	
-					</li>
+							    <li>
+								   <h4>eggs benedict</h4>
+								    <p class="listItem clearfix">
+									   <span class="dish">with homefries</span>	
+									   <span class="price">22.00</span>
+								    </p>
+						    	</li>
 
-					<li>
-						<h4>eggs norwegian</h4>
-						<p class="listItem clearfix">
-							<span class="dish">poached eggs with smoked salmon and hollandaise</span>
-							<span class="price">23.00</span>
-						</p>	
-					</li>
-				</ul>
-			</div>
+							    <li>
+								    <h4>eggs norwegain</h4>
+								    <p class="listItem clearfix">
+									   <span class="dish">poached eggs with smoked salmon and hollandaise</span>
+									   <span class="price">23.00</span>	
+								    </p>
+							    </li>
+						    </ul>
+
+						    <ul class="secondC">
+							    <li>
+								    <h4>soft-boiled organic egg</h4>
+								    <p class="listItem clearfix">
+									   <span class="dish">with "soldiers"</span>	
+									   <span class="price">5.00</span>
+								    </p>
+							    </li>
+
+							    <li>
+								   <h4>eggs ny style</h4>
+								    <p class="listItem clearfix">
+								       <span class="dish">with homefries & toast</span>
+									   <span class="price">16.00</span>	
+							        </p>
+							    </li>
+
+							    <li>
+								    <h4>scrambled eggs in puff pastry</h4>
+								    <p class="listItem clearfix">
+									    <span class="dish">with wild mushrooms and asparagus</span>
+									    <span class="price">22.00</span>
+								    </p>	
+							    </li>
+
+							    <li>
+								   <h4>eggs benedict</h4>
+								   <p class="listItem clearfix">
+									   <span class="dish">with homefries</span>
+									   <span class="price">22.00</span>
+								    </p>	
+							    </li>
+
+							    <li>
+								    <h4>eggs norwegian</h4>
+								    <p class="listItem clearfix">
+									    <span class="dish">poached eggs with smoked salmon and hollandaise</span>
+								    	<span class="price">23.00</span>
+								    </p>	
+							    </li>
+						    </ul>
+					</div>
+				</div>
+
+						
+				    <div class="tab-pane" id="lunch">
+					     <h2><span class="color">our</span> lunch</h2>
+					     <div class="meal">
+						     <ul class="firstC">
+							     <li>
+								    <h4>mojopicon chicken</h4>
+								    <p class="listItem clearfix">
+									   <span class="dish">served with pasta</span>
+									   <span class="price">5.00</span>
+								    </p>
+							    </li>
+
+							    <li>
+								   <h4>chicken schnitzel</h4>
+								   <p class="listItem clearfix">
+									  <span class="dish">served with mushroom sauce.</span>
+									  <span class="price">16.00</span>
+								   </p>	
+							    </li>
+
+							    <li>
+								   <h4>stroganoff</h4>
+								    <p class="listItem clearfix">
+									   <span class="dish">served with rice and boiled vegetables.</span>
+									   <span class="price">22.00</span>
+								    </p>	
+							    </li>
+
+							    <li>
+								    <h4>t-bone steak</h4>
+								    <p class="listItem clearfix">
+									    <span class="dish">keeping the original recipe from Argentina beef.</span>	
+									    <span class="price">22.00</span>
+								    </p>
+							    </li>
+
+							    <li>
+								    <h4>kalium steak</h4>
+								    <p class="listItem clearfix">
+									    <span class="dish">our special steak dish, served with hot pepper sauce.</span>
+									    <span class="price">23.00</span>	
+								    </p>
+							    </li>
+						    </ul>
+
+						    <ul class="secondC">
+							    <li>
+								   <h4>zwiebel steak</h4>
+								   <p class="listItem clearfix">
+									   <span class="dish">with roasted onions and veggies.</span>	
+									   <span class="price">5.00</span>
+							    	</p>
+							    </li>
+
+							    <li>
+								    <h4>grilled calamari</h4>
+								    <p class="listItem clearfix">
+								    	<span class="dish">served with vegetables.</span>
+									    <span class="price">16.00</span>	
+								    </p>
+							    </li>
+
+							    <li>
+								    <h4>sea bass grill</h4>
+								    <p class="listItem clearfix">
+									    <span class="dish">fresh potatoes and pomodorini with greek spices.</span>
+									    <span class="price">22.00</span>
+								    </p>	
+						        </li>
+
+						    	<li>
+							        <h4>fourchu Lobster</h4>
+								    <p class="listItem clearfix">
+									   <span class="dish">with homefries</span>
+									   <span class="price">22.00</span>
+								    </p>	
+							    </li>
+
+							    <li>
+								    <h4>mojopicon chicken</h4>
+								    <p class="listItem clearfix">
+									    <span class="dish">served with pasta, pepper sauce and mediterranean olives.</span>
+								    	<span class="price">23.00</span>
+							    	</p>	
+						        </li>
+						   </ul>
+			        </div>
+			    </div>
 					
-			<div id="lunch" class="tabcontent">
-				<h2><span class="color">our</span> lunch</h2>
-				<ul class="firstC">
-					<li>
-						<h4>mojopicon chicken</h4>
-						<p class="listItem clearfix">
-							<span class="dish">served with pasta</span>
-							<span class="price">5.00</span>
-						</p>
-					</li>
+			    	<div class="tab-pane" id="dinner">
+			    		<h2><span class="color">our</span> dinner</h2>
+			    		<div class="meal">
+				    		<ul class="firstC">
+						    	<li>
+						    		<h4>uramaki roll</h4>
+						    		<p class="listItem clearfix">
+						    			<span class="dish">rice is on the outside and seaweed wraps around the filling</span>
+						    			<span class="price">5.00</span>
+						    		</p>
+						    	</li>
 
-					<li>
-						<h4>chicken schnitzel</h4>
-						<p class="listItem clearfix">
-							<span class="dish">served with mushroom sauce.</span>
-							<span class="price">16.00</span>
-						</p>	
-					</li>
+						    	<li>
+							    	<h4>sashimi</h4>
+						    		<p class="listItem clearfix">
+								    	<span class="dish">fish or shellfish served alone (no rice).</span>
+								    	<span class="price">16.00</span>
+								    </p>	
+							    </li>
 
-					<li>
-						<h4>stroganoff</h4>
-						<p class="listItem clearfix">
-							<span class="dish">served with rice and boiled vegetables.</span>
-							<span class="price">22.00</span>
-						</p>	
-					</li>
+							    <li>
+								    <h4>temaki</h4>
+							    	<p class="listItem clearfix">
+							    		<span class="dish">sushi that has been hand-rolled into a cone shape.</span>
+								    	<span class="price">22.00</span>
+								    </p>	
+							    </li>
 
-					<li>
-						<h4>t-bone steak</h4>
-						<p class="listItem clearfix">
-							<span class="dish">keeping the original recipe from Argentina beef.</span>	
-							<span class="price">22.00</span>
-						</p>
-					</li>
+						    	<li>
+							    	<h4>ravioli con broccoli</h4>
+								    <p class="listItem clearfix">
+									    <span class="dish">broccoli served ravioli to stay healthy.</span>	
+								    	<span class="price">22.00</span>
+								    </p>
+							    </li>
 
-					<li>
-						<h4>kalium steak</h4>
-						<p class="listItem clearfix">
-							<span class="dish">our special steak dish, served with hot pepper sauce.</span>
-							<span class="price">23.00</span>	
-						</p>
-					</li>
-				</ul>
+							    <li>
+								    <h4>tagliatelle spinach</h4>
+							    	<p class="listItem clearfix">
+								    	<span class="dish">served with spinach and gorgonzola.</span>
+									    <span class="price">23.00</span>	
+							    	</p>
+							    </li>
+						    </ul>
 
-				<ul class="secondC">
-					<li>
-						<h4>zwiebel steak</h4>
-						<p class="listItem clearfix">
-							<span class="dish">with roasted onions and veggies.</span>	
-							<span class="price">5.00</span>
-						</p>
-					</li>
+						    <ul class="secondC">
+							    <li>
+								    <h4>linguini veggie</h4>
+								    <p class="listItem clearfix">
+									   <span class="dish">italian style linguini with fresh veggies.</span>	
+									   <span class="price">5.00</span>
+								    </p>
+							    </li>
 
-					<li>
-						<h4>grilled calamari</h4>
-						<p class="listItem clearfix">
-							<span class="dish">served with vegetables.</span>
-							<span class="price">16.00</span>	
-						</p>
-					</li>
+							    <li>
+								    <h4>shrimp risotto</h4>
+								    <p class="listItem clearfix">
+									    <span class="dish">served with fresh sea fruits and veggies.</span>
+							    		<span class="price">16.00</span>	
+								    </p>
+							    </li>
 
-					<li>
-						<h4>sea bass grill</h4>
-						<p class="listItem clearfix">
-							<span class="dish">fresh potatoes and pomodorini with greek spices.</span>
-							<span class="price">22.00</span>
-						</p>	
-				    </li>
+							    <li>
+								    <h4>mussels á provence</h4>
+								    <p class="listItem clearfix">
+									   <span class="dish">provence style mussel done in red wine.</span>
+									   <span class="price">22.00</span>
+							    	</p>	
+							    </li>
 
-					<li>
-					    <h4>fourchu Lobster</h4>
-						<p class="listItem clearfix">
-							<span class="dish">with homefries</span>
-							<span class="price">22.00</span>
-						</p>	
-					</li>
+							    <li>
+								    <h4>riesling</h4>
+								    <p class="listItem clearfix">
+									   <span class="dish">from the classic German grape of the Rhine and Mosel.</span>
+									   <span class="price">22.00</span>
+								    </p>	
+							    </li>
 
-					<li>
-						<h4>mojopicon chicken</h4>
-						<p class="listItem clearfix">
-							<span class="dish">served with pasta, pepper sauce and mediterranean olives.</span>
-							<span class="price">23.00</span>
-						</p>	
-				    </li>
-				</ul>
-			</div>
-					
-			<div id="dinner" class="tabcontent">
-				<h2><span class="color">our</span> dinner</h2>
-				<ul class="firstC">
-					<li>
-						<h4>uramaki roll</h4>
-						<p class="listItem clearfix">
-							<span class="dish">rice is on the outside and seaweed wraps around the filling</span>
-							<span class="price">5.00</span>
-						</p>
-					</li>
-
-					<li>
-						<h4>sashimi</h4>
-						<p class="listItem clearfix">
-							<span class="dish">fish or shellfish served alone (no rice).</span>
-							<span class="price">16.00</span>
-						</p>	
-					</li>
-
-					<li>
-						<h4>temaki</h4>
-						<p class="listItem clearfix">
-							<span class="dish">sushi that has been hand-rolled into a cone shape.</span>
-							<span class="price">22.00</span>
-						</p>	
-					</li>
-
-					<li>
-						<h4>ravioli con broccoli</h4>
-						<p class="listItem clearfix">
-							<span class="dish">broccoli served ravioli to stay healthy.</span>	
-							<span class="price">22.00</span>
-						</p>
-					</li>
-
-					<li>
-						<h4>tagliatelle spinach</h4>
-						<p class="listItem clearfix">
-							<span class="dish">served with spinach and gorgonzola.</span>
-							<span class="price">23.00</span>	
-						</p>
-					</li>
-				</ul>
-
-				<ul class="secondC">
-					<li>
-						<h4>linguini veggie</h4>
-						<p class="listItem clearfix">
-							<span class="dish">italian style linguini with fresh veggies.</span>	
-							<span class="price">5.00</span>
-						</p>
-					</li>
-
-					<li>
-						<h4>shrimp risotto</h4>
-						<p class="listItem clearfix">
-							<span class="dish">served with fresh sea fruits and veggies.</span>
-							<span class="price">16.00</span>	
-						</p>
-					</li>
-
-					<li>
-						<h4>mussels á provence</h4>
-						<p class="listItem clearfix">
-							<span class="dish">provence style mussel done in red wine.</span>
-							<span class="price">22.00</span>
-						</p>	
-					</li>
-
-					<li>
-						<h4>riesling</h4>
-						<p class="listItem clearfix">
-							<span class="dish">from the classic German grape of the Rhine and Mosel.</span>
-							<span class="price">22.00</span>
-						</p>	
-					</li>
-
-					<li>
-						<h4>chardonnay</h4>
-						<p class="listItem clearfix">
-							<span class="dish">sparkling, the principle white wine of Burgundy.</span>
-							<span class="price">23.00</span>
-						</p>	
-					</li>
-				</ul>
-			</div>
+						    	<li>
+							    	<h4>chardonnay</h4>
+								    <p class="listItem clearfix">
+									   <span class="dish">sparkling, the principle white wine of Burgundy.</span>
+									   <span class="price">23.00</span>
+								    </p>	
+						    	</li>
+						    </ul>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
 			
 
-			<div class="section5 clearfix">
+		    <div class="section5 clearfix">
 				<a href="#"><img src="assets/Icons/mapmarker.png" class="pointer" alt="Map pointer"></a>
-			</div>
-		</main>
+		    </div>
+        </main>
 
         <footer>
-        	<div class="wrapper2">
-	        	<div class="leftCol">
-		        	<div class="blackLogo"><img src="assets/icons/logo2.png" alt="Logo"></div>
-		        	<ul class="contacts">
-		        		<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-		        		<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-		        		<li><a href="#"><i class="fab fa-skype"></i></a></li>
-		        		<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-		        		<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-		        		<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-		        	</ul>
-	           </div>
+        	<div id="contacts">
+        		<section>
+	        	    <div class="wrapper3">
+		        		<div class="footer">
+				        	<div class="social">
+					        	<div class="blackLogo"><img src="assets/icons/logo2.png" alt="Logo"></div>
+					        	<ul class="icons">
+					        		<li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+					        		<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+					        		<li><a href="https://www.skype.com/"><i class="fab fa-skype"></i></a></li>
+					        		<li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+					        		<li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+					        		<li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+					        	</ul>
+				           </div>
 
-	           <div class="rightCol">
-	           	<ul class="info">
-	           		<li>
-	           			<div class="picture">
-	           				<img src="assets/Icons/locationicon.png" alt="Location icon">
-	           		    </div>
-	           			<div class="items">
-	           				<p>the gourmet.</p>
-	           				<p>po box 21177</p>
-	           				<p>little lonsdale st. mellbourne</p>
-	           				<p>victoria 80zz australia</p>
-	           			</div>
-	           			
-	           		</li>
-	           		<li>
-	           			<div class="picture">
-	           				<img src="assets/Icons/mobile.png" alt="Phone icon">
-	           		    </div>
-	           			<div class="items">
-	           				<p>phone:(415)124-5678</p>
-	           				<p>fax:(415)24-5678</p>
-	           			</div>
-	           		
-	           		</li>
-	           		<li>
-	           			<div class="picture">
-	           				<img src="assets/Icons/mail.png" alt="Mail icon">
-	           		    </div>
-	           			<div class="items">
-	           				<a href="#" class="email">support@yourname.com</a>
-	           			</div>
-	           		</li>
-	           	</ul>
-	           	
-	           </div>
-	        </div>
-	        <p class="rights">2015 the gourmet. all rights reserved</p>
+			           
+				           	<div class="details">
+				           		<div class="address_block">
+				           			<div class="address">
+				           				<img src="assets/Icons/locationicon.png" alt="Location icon">
+				           		    </div>
+				           			<div class="items">
+				           				<p>the gourmet.</p>
+				           				<p>po box 21177</p>
+				           				<p>little lonsdale</p>
+				           				<p>st. mellbourne</p>
+				           				<p>victoria 80zz australia</p>
+				           			</div>
+				           			
+				           		</div>
+
+				           		<div class="block">
+				           			<div class="phone">
+					           			<div class="picture">
+					           				<img src="assets/Icons/mobile.png" alt="Phone icon">
+					           		    </div>
+					           			<div class="items">
+					           				<p>phone:(415)124-5678</p>
+					           				<p>fax:(415)24-5678</p>
+					           			</div>
+				           		    </div>
+				           		
+				           		    <div class="mail">
+					           			<div class="picture">
+					           				<img src="assets/Icons/mail.png" alt="Mail icon">
+					           		    </div>
+					           			<div class="items">
+					           				<p><a href="#" class="email">support@ShaniChulin.com</a></p>
+					           			</div>
+				           		    </div>
+				           		</div>
+				           	</div>
+			        <p class="rights">2019 the gourmet. all rights reserved</p>
+			          </div> 
+		            </div>
+		       </section>
+		    </div>
         </footer>
 
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
 		<script src="index.js"></script>
 	</body>	

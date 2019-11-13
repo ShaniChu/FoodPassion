@@ -1,77 +1,44 @@
-	$(document).ready(function(){
+$(function(){
 
-		$("menu").click(function(){
-			$("menu").toggle();
-		});
+  const element = document.getElementById("nav-tab");
 
-	});
+  element.addEventListener('click', onTabClick, false);
 
-  filterSelection("all") // Execute the function and show all columns
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
 
-// Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
+function onTabClick(event) {
+  let activeTabs = document.querySelectorAll('.active');
 
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1); 
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+  // deactivate existing active tab and panel
+  activeTabs.forEach(function(tab) {
+    tab.className = tab.className.replace(' active', '');
   });
+
+  // activate new tab and panel
+  event.target.parentElement.className += ' active';
+  document.getElementById(event.target.href.split('#')[1]).className += ' active';
 }
 
-  function openMenu(evt, menuName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+});
 
+//here I put an event listener to our gallery buttons so I could see which button the user has selected
+//Then I remove the active class from the last call the user did and put it on the new call
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+  $('.buttonContainer li').on('click',function(){
+      $('.buttonContainer li').removeClass('active');
+      $(this).addClass('active');
+      let filter = $(this).attr('filterSelection');
+       
+    
+//This function show all the images that has the active class
+      $('.column').each(function(){
+        if(filter === 'all'){
+          $(this).fadeIn();
+        }
+        else {
+          $(this).hide();
+          if($(this).attr('filterCategory') === filter){
+             $(this).fadeIn();
+        }
+      }
+   });
+  });
