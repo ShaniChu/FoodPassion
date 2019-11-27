@@ -720,12 +720,21 @@ a.email:focused, a.email:visited{
 	.menu{
 		max-width:30%;
 	}
+
+	.copyright{
+		font-size:12px;
+	}
+
 }
 
 
 @media (max-width: 256px){
 	.details{
 		font-size: 10px;
+	}
+
+	.copyright{
+		font-size:12px;
 	}
 }
 
