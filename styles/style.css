@@ -8,8 +8,8 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 
 .wrapper{
-	max-width:80%;
 	margin:0 auto;
+	width:85%;
 }
 
 body{
@@ -727,6 +727,15 @@ a.email:focused, a.email:visited{
 
 }
 
+
+@media (max-width: 256px){
+
+    .bottom_Menu{
+    	flex-direction:row;
+
+    }
+
+}
 
 @media (max-width: 256px){
 	.details{
